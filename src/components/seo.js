@@ -9,7 +9,7 @@ import * as React from "react"
 import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
-
+  //TODO create meta tags for SEO
 function Seo({ description, lang, meta, title }) {
   const { site } = useStaticQuery(
     graphql`

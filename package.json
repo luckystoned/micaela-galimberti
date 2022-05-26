@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "micaela-galimberti-pwa",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "A simple portfolio animated developing quickly with Gatsby",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Lucas Olini <luckystoned.dev@gmail.com>",
   "dependencies": {
     "gatsby": "^4.15.0",
     "gatsby-plugin-gatsby-cloud": "^4.15.0",
