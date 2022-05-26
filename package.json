@@ -5,6 +5,8 @@
   "version": "0.1.0",
   "author": "Lucas Olini <luckystoned.dev@gmail.com>",
   "dependencies": {
+    "@headlessui/react": "^1.6.3",
+    "@heroicons/react": "^1.0.6",
     "autoprefixer": "^10.4.7",
     "gatsby": "^4.15.0",
     "gatsby-plugin-gatsby-cloud": "^4.15.0",
