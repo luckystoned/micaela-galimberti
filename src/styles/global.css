@@ -1,17 +1,47 @@
 @tailwind base;
-
-h1 {
-  @apply text-2xl;
-}
-h2 {
-  @apply text-xl;
-}
-h3 {
-  @apply text-lg;
-}
-a {
-  @apply text-blue-600;
-}
-
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: "Roslindale";
+    src: url("../fonts/RoslindaleVariableDisplay-VF.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Mori Regular";
+    src: url("../fonts/PPMori-Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Mori Bold";
+    src: url("../fonts/PPMori-SemiBold.otf") format("opentype");
+}
+
+h1 {
+    @apply font-roslindale;
+    @apply text-blue;
+    @apply text-9xl;
+}
+
+h2 {
+    @apply font-roslindale;
+    @apply text-blue;
+    @apply text-6xl;
+}
+
+h3 {
+    @apply font-moriregular;
+    @apply text-blue;
+    @apply text-4xl;
+}
+
+p {
+    @apply font-moriregular;
+    @apply text-blue;
+    @apply text-xl;
+}
+
+
+
+
+

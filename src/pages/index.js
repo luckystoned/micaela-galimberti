@@ -6,7 +6,10 @@ import Seo from "../components/Seo"
 const IndexPage = () => (
   <Layout>
     <Seo title="Home" />
-    <h1>Hi people</h1>
+    <h1>Know me</h1>
+    <h2>Projects</h2>
+    <h3>Hello there! I'm Mica, a Graphic & UX/UI Designer from Buenos Aires, Argentina.</h3>
+    <p>Part of my work is shape brands, build visual systems, bring web solutions and illustrate or animate when I have a chance. <br/> I'm currently focus on UX-UI design, trying to improve in it day by day and generate a positive impact on people's lives.<br/> I love to think the concept of design as a tool that provides strategy solutions and empower the community.</p>
   </Layout>
 )
 
