@@ -7,6 +7,12 @@ module.exports = {
     siteUrl: `https://micaelagalimberti.gatsbyjs.io/`,
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-postcss`,
+      options: {
+        postCssPlugins: [require("tailwindcss"), require("autoprefixer")]
+      }
+    },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
     {
