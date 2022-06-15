@@ -1,0 +1,8 @@
+@media (max-width: 768px) {
+  .Home {
+    background-image: url("../../images/home-banner-mobile.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+  }
+}

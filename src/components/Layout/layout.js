@@ -21,16 +21,20 @@ const Layout = ({ children }) => {
       }
     }
   `)
+  const title = data.site.siteMetadata?.title
+  const currentPage = children[0].props.title
 
   return (
-    <div className="container mx-auto">
-      <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-      <main>{children}</main>
-      <footer>
-        © {new Date().getFullYear()} &middot; Built with
-        {` `}
-        <a href="https://www.gatsbyjs.com">Gatsby</a>
-      </footer>
+    <div className={currentPage}>
+      <div className="container mx-auto">
+        <Header siteTitle={title || `Title`} />
+        <main>{children}</main>
+        <footer>
+          © {new Date().getFullYear()} &middot; Built with
+          {` `}
+          <a href="https://www.gatsbyjs.com">Gatsby</a>
+        </footer>
+      </div>
     </div>
   )
 }
