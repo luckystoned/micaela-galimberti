@@ -41,3 +41,8 @@ p {
   @apply text-xl;
 }
 
+footer {
+  @apply font-moriregular;
+  @apply text-white;
+  @apply text-sm;
+}
