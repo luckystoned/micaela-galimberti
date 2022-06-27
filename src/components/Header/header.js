@@ -16,23 +16,23 @@ const Header = ({ siteTitle }) => (
   <Disclosure as="nav">
   {({ open }) => (
     <>
-      <div className="max-w-7xl mx-auto sm:px-6 lg:px-8">
+      <div className="mx-auto px-6 ">
         <div className="relative flex items-center justify-between h-16">
-          <div className="absolute inset-y-0 right-0 flex items-center sm:hidden">
+          <div className="absolute inset-y-0 right-0 flex items-center md:hidden">
             {/* Mobile menu button*/}
             <Disclosure.Button className="inline-flex items-center justify-center p-2focus:outline-none">
-              <div className="block h-6 w-6 xs:text-white" aria-hidden="true">
+              <div className="block h-6 w-6 text-white" aria-hidden="true">
               {open ? '(-)' : '(+)'}
               </div>
             </Disclosure.Button>
           </div>
-          <div className="absolute inset-y-0 left-0 flex items-center xs:text-white sm:hidden">
+          <div className="absolute inset-y-0 left-0 flex items-center text-white md:hidden">
             <Link to="/">
               {'(00) HOME'}
             </Link>
           </div>
           <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
-            <div className="hidden sm:block sm:ml-6">
+            <div className="invisible md:visible sm:block sm:ml-6">
               <div className="flex space-x-4 xs:text-blue">
                 {navigation.map((item) => (
                   <Link
@@ -53,7 +53,7 @@ const Header = ({ siteTitle }) => (
         </div>
       </div>
 
-      <Disclosure.Panel className="sm:hidden">
+      <Disclosure.Panel className="absolute md:hidden mx-auto px-6">
         <div className="pt-2 pb-3 space-y-1">
           {navigation.map((item) => (
             <Link
@@ -61,7 +61,7 @@ const Header = ({ siteTitle }) => (
               to={item.href}
               className={classNames(
                 item.current ? 'current' : 'no-current',
-                'block xs:text-white'
+                'block text-white'
               )}
               aria-current={item.current ? 'page' : undefined}
             >

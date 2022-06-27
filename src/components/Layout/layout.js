@@ -8,9 +8,9 @@
 import * as React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-import LogoFooter from "../../images/logo-blanco.svg"
 
 import Header from "../Header"
+import Footer from "../Footer"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -27,17 +27,10 @@ const Layout = ({ children }) => {
 
   return (
     <div className={currentPage}>
-      <div className="container mx-auto">
+      <div className="container">
         <Header siteTitle={title || `Title`} />
         <main>{children}</main>
-        <footer>
-          <div className="text-center items-center visible md:invisible py-6"> 
-            <img src={LogoFooter} alt="Micaela Galimberti Logo SVG" className="m-auto" />
-            <div className="text-white">
-              GRAPHIC & UX/UI DESIGNER  /   Be,   Li,   IG  <br/> /  GET IN TOUCH   (+) 54 11 2391 1872  OR <br/> MICA.GALIMBERTI@GMAIL.COM  /  2022 ©
-            </div>
-          </div>
-        </footer>
+        <Footer />
       </div>
     </div>
   )
