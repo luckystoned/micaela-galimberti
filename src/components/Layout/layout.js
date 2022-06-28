@@ -25,6 +25,8 @@ const Layout = ({ children }) => {
   const title = data.site.siteMetadata?.title
   const currentPage = children[0].props.title
 
+  console.log(currentPage)
+
   return (
     <div className={currentPage}>
       <div className="container">

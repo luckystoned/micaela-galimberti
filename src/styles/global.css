@@ -41,8 +41,43 @@ p {
   @apply text-xl;
 }
 
+span {
+  @apply font-moriregular;
+  @apply text-blue;
+  @apply text-sm;
+}
+
+button {
+  @apply font-moriregular;
+  @apply text-blue;
+  @apply text-base;
+  @apply outline;
+  @apply outline-offset-0;
+  @apply rounded-3xl;
+  @apply py-1;
+}
+
+.no-button {
+  font-family: inherit;
+  --tw-text-opacity: none;
+  color: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  outline-style: inherit;
+  outline-offset: inherit;
+  border-radius: inherit;
+  padding-top: inherit;
+  padding-bottom: inherit;
+}
+
 footer {
   @apply font-moriregular;
   @apply text-white;
   @apply text-sm;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    @apply text-8xl;
+  }
 }

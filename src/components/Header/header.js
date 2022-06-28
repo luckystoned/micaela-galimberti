@@ -20,7 +20,7 @@ const Header = ({ siteTitle }) => (
         <div className="relative flex items-center justify-between h-16">
           <div className="absolute inset-y-0 right-0 flex items-center md:hidden">
             {/* Mobile menu button*/}
-            <Disclosure.Button className="inline-flex items-center justify-center p-2focus:outline-none">
+            <Disclosure.Button className="no-button inline-flex items-center justify-center p-2focus:outline-none">
               <div className="block h-6 w-6 text-white" aria-hidden="true">
               {open ? '(-)' : '(+)'}
               </div>
