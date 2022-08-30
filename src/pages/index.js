@@ -8,7 +8,7 @@ import '../styles/pages/index.css'
 const IndexPage = () => (
   <Layout>
     <Seo title="Home" />
-    <div className="invisible md:visible">
+    <div className="hidden md:block">
       <h1>Know me</h1>
       <h2>Projects</h2>
       <h3>Hello there! I'm Mica, a Graphic & UX/UI Designer from Buenos Aires, Argentina.</h3>
